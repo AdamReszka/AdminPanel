@@ -54,6 +54,63 @@ body {
 #head-menu {
   width: 100%;
   height: 6rem;
-  background-color: #2595BA; }
+  background-color: #2595BA;
+  font-family: "Pacifico", cursive;
+  font-size: 3rem;
+  color: #fff; }
+  #head-menu .logo-title {
+    margin: 0;
+    padding: 1.5rem 2rem; }
+
+.side-menu {
+  width: 21rem;
+  height: 100vh;
+  background-color: #0B3645;
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.8rem; }
+  .side-menu ul {
+    display: inline-block;
+    list-style: none;
+    width: inherit; }
+    .side-menu ul li {
+      width: inherit;
+      height: 4rem; }
+      .side-menu ul li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: inherit;
+        height: inherit; }
+        .side-menu ul li a:hover {
+          background-color: #072029;
+          cursor: pointer; }
+
+.hello-screen {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../images/mainback.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+  display: flex;
+  flex-direction: row; }
+  .hello-screen .hello-titles {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; }
+    .hello-screen .hello-titles .big-title {
+      font-family: "Pacifico", cursive; }
+      .hello-screen .hello-titles .big-title .first {
+        color: #0B3645;
+        font-size: 10rem; }
+      .hello-screen .hello-titles .big-title .second {
+        text-align: center;
+        color: #2595BA;
+        font-size: 3rem;
+        padding: 1rem; }
 
 /*# sourceMappingURL=main.css.map */

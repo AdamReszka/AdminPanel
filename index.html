@@ -2,14 +2,25 @@
 <html lang="pl" ng-app>
 <head>
 	<meta charset="UTF-8">
-	<title>Admin Panel</title>
+	<title>Hello Admin</title>
 	<script src="app\libs\jquery-3.1.1.min.js"></script>
 	<script src="app\libs\angular.min.js"></script>
 	<script src="js/main.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+	<link rel="icon" href="favicon-96x96.png" type="image/png"> 
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<header ng-include="'header.html'"></header>
-	
+	<div class="hello-screen">
+		<nav ng-include="'side.html'"></nav>
+		<div class="hello-titles">
+			<div class="big-title">
+				<p class="first">Hello Admin</p>
+				<p class="second">simplify your day</p>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
