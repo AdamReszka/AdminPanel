@@ -11,10 +11,18 @@ body {
 	font-family: $main-f;
 	font-size: 3rem;
 	color: #fff;
-	.logo-title {
+	.home-link {
+		display: block;
+		width: 21rem;
+		height: 6rem;
+
+		.logo-title {
 		margin: 0;
 		padding: 1.5rem 2rem;
+		width: 17rem;
+		}
 	}
+	
 }
 .side-menu {
 	width: 21rem;
@@ -103,9 +111,6 @@ body {
 
 				}
 				.short-link {
-					text-decoration: none;
-					outline: none;
-					color: #fff;
 					display: flex;
 					width: inherit;
 					height: inherit;
@@ -117,4 +122,9 @@ body {
 			}
 		}
 	}
+}
+.anchor {
+	text-decoration: none;
+	outline: none;
+	color: #fff;
 }
