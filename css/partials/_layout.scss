@@ -83,10 +83,37 @@ body {
 				width: 20rem;
 				height: 20rem;
 				border-radius: 50%;
+				color: #fff;
 				background-color: $side-c;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
+				transition: 0.3s;
+				&:hover {
+					background-color: $header-c;
+				}
+				.fa-list {
+					font-size: 5rem;
+					margin: 4.5rem 0 2rem 0;
+				}
+				.sc-button {
+						font-family: $menu-f;
+						font-size: 2.2rem;
+				}
+				.fa-plus {
+					font-size: 5.6rem;
+					margin: 4.2rem 0 1.7rem 0;
+
+				}
+				.short-link {
+					text-decoration: none;
+					outline: none;
+					color: #fff;
+					display: flex;
+					width: inherit;
+					height: inherit;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					border-radius: 50%;
+				}
 			}
 		}
 	}
