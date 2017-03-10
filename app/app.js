@@ -14,7 +14,18 @@ adminPanelApp.controller('AdminController', ['$scope', function($scope){
 		var removedUser = $scope.users.indexOf(user);
 		$scope.users.splice(removedUser, 1);
 
-	}
+	};
+	$scope.addUser = function(){
+		$scope.users.push({
+			firstName: $scope.newUser.firstName,
+			lastName: $scope.newUser.lastName,
+			email: $scope.newUser.email,
+			login: $scope.newUser.login,
+			password: $scope.newUser.password,
+			role: $scope.newUser.role,
+			status: $scope.newUser.userStatus
+		});
+	};
 
 	$scope.users = [
 		{
