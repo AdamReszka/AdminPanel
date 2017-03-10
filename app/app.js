@@ -41,10 +41,11 @@ adminPanelApp.controller('AdminController', ['$scope', function($scope){
 			role: "Moderator",
 			status: "Active"
 		},
+
 		{
 			number: "4",
 			firstName: "Karol",
-			lastName: "Kupa",
+			lastName: "Kura",
 			email: "k.kura@gmail.com",
 			login: "kkura",
 			password: "karolek",

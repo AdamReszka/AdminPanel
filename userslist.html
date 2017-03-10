@@ -20,6 +20,11 @@
 		<nav ng-include="'side.html'"></nav>
 		<div class="list-cont">
 			<table class="users-table" ng-controller="AdminController">
+			<div class="search-wrap">
+				<input id="u-search" type="text" ng-model="search" placeholder="Search for user">
+				<i class="fa fa-search" aria-hidden="true"></i>
+
+			</div>
 				<thead>
 					<tr>
 						<th class="th-no">No.</th>
@@ -33,7 +38,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr ng-repeat="user in users">
+					<tr ng-repeat="user in users | filter: search">
 						<td>{{user.number}}</td>
 						<td>{{user.firstName}}</td>
 						<td>{{user.lastName}}</td>
