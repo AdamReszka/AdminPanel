@@ -21,24 +21,32 @@
 		<div class="list-cont">
 			<table class="users-table" ng-controller="AdminController">
 			<div class="search-wrap">
-				<input id="u-search" type="text" ng-model="search" placeholder="Search for user">
+				<input id="u-search" type="text" ng-model="search" placeholder="Search for a user">
 				<i class="fa fa-search" aria-hidden="true"></i>
 
 			</div>
 				<thead>
 					<tr>
-						<th class="th-no">No.</th>
-						<th class="th-first">First name</th>
-						<th class="th-last">Last name</th>
-						<th class="th-email">Email</th>
-						<th class="th-login">Login</th>
-						<th class="th-pass">Password</th>
-						<th class="th-role">Role</th>
-						<th class="th-status">Status</th>
+						<th class="th-no" ng-click="order = 'number'">No.<i class="fa fa-sort" aria-hidden="true"></i>
+						</th>
+						<th class="th-first" ng-click="order = 'firstName'">First name<i class="fa fa-sort" aria-hidden="true"></i>
+						</th>
+						<th class="th-last" ng-click="order = 'lastName'">Last name<i class="fa fa-sort" aria-hidden="true"></i>
+						</th>
+						<th class="th-email" ng-click="order = 'email'">Email<i class="fa fa-sort" aria-hidden="true"></i>
+						</th>
+						<th class="th-login" ng-click="order = 'login'">Login<i class="fa fa-sort" aria-hidden="true"></i>
+						</th>
+						<th class="th-pass" ng-click="order = 'password'">Password<i class="fa fa-sort" aria-hidden="true"></i>
+						</th>
+						<th class="th-role" ng-click="order = 'role'">Role<i class="fa fa-sort" aria-hidden="true"></i>
+						</th>
+						<th class="th-status" ng-click="order = 'status'">Status<i class="fa fa-sort" aria-hidden="true"></i>
+</th>
 					</tr>
 				</thead>
 				<tbody>
-					<tr ng-repeat="user in users | filter: search">
+					<tr ng-repeat="user in users | orderBy: order | filter: search">
 						<td>{{user.number}}</td>
 						<td>{{user.firstName}}</td>
 						<td>{{user.lastName}}</td>

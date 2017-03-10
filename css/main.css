@@ -290,7 +290,18 @@ option {
       background-color: #0B3645;
       border-radius: 0.2rem;
       padding: 1.1rem 0 0 0;
-      margin: 0.5rem; }
+      margin: 0.5rem;
+      position: relative; }
+      .users-table tr th:hover {
+        cursor: pointer; }
+        .users-table tr th:hover .fa-sort {
+          color: #2595BA; }
+      .users-table tr th .fa-sort {
+        color: #fff;
+        position: absolute;
+        right: 0.2rem;
+        top: 1.3rem;
+        font-size: 1.4rem; }
     .users-table tr .th-no {
       min-width: 8rem; }
     .users-table tr .th-first {

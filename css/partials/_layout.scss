@@ -282,6 +282,20 @@ option {
 			border-radius: 0.2rem;
 			padding: 1.1rem 0 0 0;
 			margin: 0.5rem;
+			position: relative;
+			&:hover {
+				cursor: pointer;
+				.fa-sort {
+					color: $header-c;
+				}
+			}
+			.fa-sort {
+				color: #fff;
+				position: absolute;
+				right: 0.2rem;
+				top: 1.3rem;
+				font-size: 1.4rem;
+			}
 			
 		}
 		.th-no{min-width: 8rem;}
