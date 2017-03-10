@@ -12,6 +12,7 @@ adminPanelApp.controller('AdminController', ['$scope', function($scope){
 
 	$scope.users = [
 		{
+			number: "1",
 			firstName: "Adam",
 			lastName: "Reszka",
 			email: "adam.reszka85@gmail.com",
@@ -21,6 +22,7 @@ adminPanelApp.controller('AdminController', ['$scope', function($scope){
 			status: "Active"
 		},
 		{
+			number: "2",
 			firstName: "Jan",
 			lastName: "Kowalski",
 			email: "jan.kowalski@gmail.com",
@@ -30,6 +32,7 @@ adminPanelApp.controller('AdminController', ['$scope', function($scope){
 			status: "Active"
 		},
 		{
+			number: "3",
 			firstName: "Maria",
 			lastName: "Nowak",
 			email: "maria.nowak35@gmail.com",
@@ -39,6 +42,7 @@ adminPanelApp.controller('AdminController', ['$scope', function($scope){
 			status: "Active"
 		},
 		{
+			number: "4",
 			firstName: "Karol",
 			lastName: "Kupa",
 			email: "k.kura@gmail.com",

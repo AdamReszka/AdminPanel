@@ -267,11 +267,52 @@ label.highlight {
 option {
   color: #000; }
 
-.list-cont {
+.list-screen {
   width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
+  min-height: 100vh;
+  display: flex; }
+  .list-screen .list-cont {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+.users-table {
+  margin: 4rem 0 0 0; }
+  .users-table tr {
+    font-family: "Quicksand", sans-serif; }
+    .users-table tr th {
+      height: 4rem;
+      font-size: 1.8rem;
+      color: #fff;
+      box-sizing: border-box;
+      background-color: #0B3645;
+      border-radius: 0.2rem;
+      padding: 1.1rem 0 0 0;
+      margin: 0.5rem; }
+    .users-table tr .th-no {
+      min-width: 8rem; }
+    .users-table tr .th-first {
+      min-width: 20rem; }
+    .users-table tr .th-last {
+      min-width: 20rem; }
+    .users-table tr .th-email {
+      min-width: 24rem; }
+    .users-table tr .th-login {
+      min-width: 15rem; }
+    .users-table tr .th-pass {
+      min-width: 12rem; }
+    .users-table tr .th-role {
+      min-width: 12rem; }
+    .users-table tr .th-status {
+      min-width: 10rem; }
+    .users-table tr td {
+      height: 2rem;
+      font-size: 1.2;
+      background-color: #fff;
+      color: #000;
+      box-sizing: border-box;
+      border-radius: 0.2rem; }
 
 /*# sourceMappingURL=main.css.map */
