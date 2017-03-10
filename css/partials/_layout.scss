@@ -280,8 +280,8 @@ option {
 			// display: table-cell;
 			// align-items: center;
 			border-radius: 0.2rem;
-			padding: 1.1rem 0 0 0;
-			margin: 0.5rem;
+			// padding: 1.1rem 0;
+			// margin: 0.5rem;
 			position: relative;
 			&:hover {
 				cursor: pointer;
@@ -306,6 +306,7 @@ option {
 		.th-pass{min-width: 12rem;}
 		.th-role{min-width: 12rem;}
 		.th-status{min-width: 10rem;}
+		.th-del{min-width: 4rem;}
 		td {
 			height: 2rem;
 			font-size: 1.4rem;
@@ -322,6 +323,15 @@ option {
 		}
 	}
 
+}
+.fa-times {
+	color: #000;
+	display: block;
+	text-align: center;
+	&:hover {
+		cursor: pointer;
+		color: red;
+	}
 }
 .search-wrap {
 	display: flex;

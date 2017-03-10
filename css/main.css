@@ -289,8 +289,6 @@ option {
       box-sizing: border-box;
       background-color: #0B3645;
       border-radius: 0.2rem;
-      padding: 1.1rem 0 0 0;
-      margin: 0.5rem;
       position: relative; }
       .users-table tr th:hover {
         cursor: pointer; }
@@ -318,6 +316,8 @@ option {
       min-width: 12rem; }
     .users-table tr .th-status {
       min-width: 10rem; }
+    .users-table tr .th-del {
+      min-width: 4rem; }
     .users-table tr td {
       height: 2rem;
       font-size: 1.4rem;
@@ -328,6 +328,14 @@ option {
       padding: 0.3rem 0 0 0.3rem; }
     .users-table tr:nth-child(even) td {
       background-color: #C3DDE8; }
+
+.fa-times {
+  color: #000;
+  display: block;
+  text-align: center; }
+  .fa-times:hover {
+    cursor: pointer;
+    color: red; }
 
 .search-wrap {
   display: flex;

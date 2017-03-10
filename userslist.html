@@ -42,7 +42,9 @@
 						<th class="th-role" ng-click="order = 'role'">Role<i class="fa fa-sort" aria-hidden="true"></i>
 						</th>
 						<th class="th-status" ng-click="order = 'status'">Status<i class="fa fa-sort" aria-hidden="true"></i>
-</th>
+						</th>
+						<th class="th-del">
+						</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -55,6 +57,8 @@
 						<td>{{user.password}}</td>
 						<td>{{user.role}}</td>
 						<td>{{user.status}}</td>
+						<td><i class="fa fa-times" aria-hidden="true" title="delete this user" ng-click="removeUser(user)"></i>
+						</td>
 					</tr>
 				</tbody>
 			</table>

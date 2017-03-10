@@ -10,6 +10,12 @@ var adminPanelApp = angular.module('adminPanelApp', []);
 
 adminPanelApp.controller('AdminController', ['$scope', function($scope){
 
+	$scope.removeUser = function(user){
+		var removedUser = $scope.users.indexOf(user);
+		$scope.users.splice(removedUser, 1);
+
+	}
+
 	$scope.users = [
 		{
 			number: "1",
