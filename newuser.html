@@ -27,38 +27,38 @@
 							<label>
 								First Name<span class="req">*</span>
               				</label>
-              				<input type="text" required autocomplete="off" />
+              				<input type="text" required autocomplete="off" ng-model="" />
 						</div>
 						<div class="field-wrap">
 							<label>
 								Last Name<span class="req">*</span>
               				</label>
-              				<input type="text"required autocomplete="off"/>
+              				<input type="text"required autocomplete="off" ng-model=""/>
 						</div>
 					</div>
 						<div class="field-wrap single-row">
             				<label>
               					Email Address<span class="req">*</span>
             				</label>
-            				<input type="email"required autocomplete="off"/>
+            				<input type="email"required autocomplete="off" ng-model=""/>
           				</div>
           				<div class="field-wrap single-row">
             				<label>
               					Login<span class="req">*</span>
             				</label>
-            				<input type="text"required autocomplete="off"/>
+            				<input type="text"required autocomplete="off" ng-model=""/>
           				</div>
           				<div class="field-wrap single-row">
             				<label>
               					Set A Password<span class="req">*</span>
             				</label>
-            				<input type="password"required autocomplete="off"/>
+            				<input type="password"required autocomplete="off" ng-model=""/>
           				</div>
           				<div class="field-wrap single-row">
           					<label class="active">
               					Role<span class="req">*</span>
             				</label>
-          					<select name="role">
+          					<select name="role" ng-model="">
           						<option value="" selected></option>
     							<option value="User" placeholder="test" selected>User</option>
     							<option value="moderator">Moderator</option>
@@ -69,7 +69,7 @@
           					<label class="active">
               					Status<span class="req">*</span>
             				</label>
-          					<select name="status">
+          					<select name="status" ng-model="">
           						<option value="" disabled selected>Status</option>
     							<option value="active" selected>Active</option>
     							<option value="disabled">Disabled</option>

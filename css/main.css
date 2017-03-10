@@ -283,7 +283,7 @@ option {
   .users-table tr {
     font-family: "Quicksand", sans-serif; }
     .users-table tr th {
-      height: 4rem;
+      height: 40px;
       font-size: 1.8rem;
       color: #fff;
       box-sizing: border-box;
