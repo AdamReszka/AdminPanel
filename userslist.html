@@ -5,6 +5,7 @@
 	<title>Hello Admin</title>
 	<script src="app\libs\jquery-3.1.1.min.js"></script>
 	<script src="app\libs\angular.min.js"></script>
+	<script src="app\libs\angular-route.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="app\app.js"></script>
 	<link rel="stylesheet" type="text/css" href="images/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -27,23 +28,23 @@
 			</div>
 				<thead>
 					<tr>
-						<th class="th-no" ng-click="order = 'number'">No.<i class="fa fa-sort" aria-hidden="true"></i>
+						<th class="th-no" ng-click="order = 'number'"><p class="tab-head">No.</p><i class="fa fa-sort" aria-hidden="true"></i>
 						</th>
-						<th class="th-first" ng-click="order = 'firstName'">First name<i class="fa fa-sort" aria-hidden="true"></i>
+						<th class="th-first" ng-click="order = 'firstName'"><p class="tab-head">First name</p><i class="fa fa-sort" aria-hidden="true"></i>
 						</th>
-						<th class="th-last" ng-click="order = 'lastName'">Last name<i class="fa fa-sort" aria-hidden="true"></i>
+						<th class="th-last" ng-click="order = 'lastName'"><p class="tab-head">Last name</p><i class="fa fa-sort" aria-hidden="true"></i>
 						</th>
-						<th class="th-email" ng-click="order = 'email'">Email<i class="fa fa-sort" aria-hidden="true"></i>
+						<th class="th-email" ng-click="order = 'email'"><p class="tab-head">Email</p><i class="fa fa-sort" aria-hidden="true"></i>
 						</th>
-						<th class="th-login" ng-click="order = 'login'">Login<i class="fa fa-sort" aria-hidden="true"></i>
+						<th class="th-login" ng-click="order = 'login'"><p class="tab-head">Login</p><i class="fa fa-sort" aria-hidden="true"></i>
 						</th>
-						<th class="th-pass" ng-click="order = 'password'">Password<i class="fa fa-sort" aria-hidden="true"></i>
+						<th class="th-pass" ng-click="order = 'password'"><p class="tab-head">Password</p><i class="fa fa-sort" aria-hidden="true"></i>
 						</th>
-						<th class="th-role" ng-click="order = 'role'">Role<i class="fa fa-sort" aria-hidden="true"></i>
+						<th class="th-role" ng-click="order = 'role'"><p class="tab-head">Role</p><i class="fa fa-sort" aria-hidden="true"></i>
 						</th>
 						<th class="th-status" ng-click="order = 'status'">Status<i class="fa fa-sort" aria-hidden="true"></i>
 						</th>
-						<th class="th-del">
+						<th class="th-del">.
 						</th>
 					</tr>
 				</thead>
@@ -65,6 +66,6 @@
 			
 		</div>
 	</div>
-	
+
 </body>
 </html>

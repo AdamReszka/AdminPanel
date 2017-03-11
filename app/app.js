@@ -1,8 +1,17 @@
-var adminPanelApp = angular.module('adminPanelApp', []);
+var adminPanelApp = angular.module('adminPanelApp', ['ngRoute']);
 
-// adminPanelApp.config(function(){
+// adminPanelApp.config(['$routeProvider', function($routeProvider){
 
-// });
+// 	$routeProvider
+// 		.when('/userslist', {
+// 			templateUrl: 'userslist.html',
+// 			controller: 'AdminController'
+// 		})
+// 		.when('/newuser', {
+// 			templateUrl: 'newuser.html',
+// 			controller: 'AdminController'
+// 		})
+// }]);
 
 // adminPanelApp.run(function(){
 
@@ -15,16 +24,27 @@ adminPanelApp.controller('AdminController', ['$scope', function($scope){
 		$scope.users.splice(removedUser, 1);
 
 	};
-	$scope.addUser = function(){
+	$scope.addUser = function(newuser){
+		console.log('działa');
+		console.log($scope.newuser.firstName);
 		$scope.users.push({
-			firstName: $scope.newUser.firstName,
-			lastName: $scope.newUser.lastName,
-			email: $scope.newUser.email,
-			login: $scope.newUser.login,
-			password: $scope.newUser.password,
-			role: $scope.newUser.role,
-			status: $scope.newUser.userStatus
+			number: "99",
+			firstName: $scope.newuser.firstName,
+			lastName: $scope.newuser.lastName,
+			email: $scope.newuser.email,
+			login: $scope.newuser.login,
+			password: $scope.newuser.password,
+			role: $scope.newuser.role,
+			status: $scope.newuser.userStatus
 		});
+
+		$scope.newuser.firstName = "";
+		$scope.newuser.lastName = "";
+		$scope.newuser.email = "";
+		$scope.newuser.login = "";
+		$scope.newuser.password = "";
+		$scope.newuser.role = "";
+		$scope.newuser.userStatus = "";
 	};
 
 	$scope.users = [
@@ -58,7 +78,6 @@ adminPanelApp.controller('AdminController', ['$scope', function($scope){
 			role: "Moderator",
 			status: "Active"
 		},
-
 		{
 			number: "4",
 			firstName: "Karol",

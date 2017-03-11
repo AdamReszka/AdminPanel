@@ -269,17 +269,20 @@ option {
 
 	tr {
 		font-family: $menu-f;
+		
 
 		th {
-			height: 40px;
+			height: 4rem;
 			font-size: 1.8rem;
 			color: #fff;
-			box-sizing: border-box;
+			
 			background-color: $side-c;
 			border-radius: 0.2rem;
-			// padding: 1.1rem 0;
+			// padding: 1.1rem 0 0 0;
 			// margin: 0.5rem;
+			box-sizing: border-box;
 			position: relative;
+			
 			&:hover {
 				cursor: pointer;
 				.fa-sort {
@@ -289,6 +292,7 @@ option {
 			.fa-sort {
 				color: #fff;
 				position: absolute;
+				z-index: 200;
 				right: 0.2rem;
 				top: 1.3rem;
 				font-size: 1.4rem;
@@ -303,7 +307,11 @@ option {
 		.th-pass{min-width: 12rem;}
 		.th-role{min-width: 12rem;}
 		.th-status{min-width: 10rem;}
-		.th-del{min-width: 4rem;}
+		.th-del{min-width: 7rem;
+				// height: 4rem;
+				margin: 0;
+				color: $side-c;
+				padding: 0;}
 		td {
 			height: 2rem;
 			font-size: 1.4rem;
@@ -353,4 +361,14 @@ input#u-search {
 		background-color: #fff;
 		border: none;
 
-	}
+}
+.tab-head {
+	position: relative;
+	margin: 0;
+	padding: 1.1rem 0 0 0;
+	display: inline;
+}
+
+thead {
+	height: 4rem;
+}
