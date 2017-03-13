@@ -371,4 +371,9 @@ input#u-search {
 thead {
   height: 4rem; }
 
+.angular-view {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 /*# sourceMappingURL=main.css.map */
