@@ -1,0 +1,46 @@
+<div class="list-cont">
+			<table class="users-table">
+			<div class="search-wrap">
+				<input id="u-search" type="text" ng-model="search" placeholder="Search for a user">
+				<i class="fa fa-search" aria-hidden="true"></i>
+
+			</div>
+				<thead>
+					<tr>
+						<th class="th-no" ng-click="order = 'number'"><p class="tab-head">No.</p><i class="fa fa-sort" aria-hidden="true"></i>
+						</th>
+						<th class="th-first" ng-click="order = 'firstName'"><p class="tab-head">First name</p><i class="fa fa-sort" aria-hidden="true"></i>
+						</th>
+						<th class="th-last" ng-click="order = 'lastName'"><p class="tab-head">Last name</p><i class="fa fa-sort" aria-hidden="true"></i>
+						</th>
+						<th class="th-email" ng-click="order = 'email'"><p class="tab-head">Email</p><i class="fa fa-sort" aria-hidden="true"></i>
+						</th>
+						<th class="th-login" ng-click="order = 'login'"><p class="tab-head">Login</p><i class="fa fa-sort" aria-hidden="true"></i>
+						</th>
+						<th class="th-pass" ng-click="order = 'password'"><p class="tab-head">Password</p><i class="fa fa-sort" aria-hidden="true"></i>
+						</th>
+						<th class="th-role" ng-click="order = 'role'"><p class="tab-head">Role</p><i class="fa fa-sort" aria-hidden="true"></i>
+						</th>
+						<th class="th-status" ng-click="order = 'userStatus'">Status<i class="fa fa-sort" aria-hidden="true"></i>
+						</th>
+						<th class="th-del">.
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="user in adcon.users | orderBy: order | filter: search">
+						<td>{{user.number}}</td>
+						<td>{{user.firstName}}</td>
+						<td>{{user.lastName}}</td>
+						<td>{{user.email}}</td>
+						<td>{{user.login}}</td>
+						<td>{{user.password}}</td>
+						<td>{{user.role}}</td>
+						<td>{{user.userStatus}}</td>
+						<td><i class="fa fa-times" aria-hidden="true" title="delete this user" ng-click="adcon.removeUser(user)"></i>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+		</div>

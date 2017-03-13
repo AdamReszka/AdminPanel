@@ -1,53 +1,65 @@
 var adminPanelApp = angular.module('adminPanelApp', ['ngRoute']);
 
-// adminPanelApp.config(['$routeProvider', function($routeProvider){
+adminPanelApp.config(['$routeProvider', function($routeProvider){
 
-// 	$routeProvider
-// 		.when('/userslist', {
-// 			templateUrl: 'userslist.html',
-// 			controller: 'AdminController'
-// 		})
-// 		.when('/newuser', {
-// 			templateUrl: 'newuser.html',
-// 			controller: 'AdminController'
-// 		})
-// }]);
+	$routeProvider
+		.when('/home', {
+			templateUrl: 'views/home.html',
+			controller: 'AdminController'
+		})
+		.when('/newuser', {
+			templateUrl: 'views/newuser.html',
+			controller: 'AdminController'
+		})
+		.when('/userslist', {
+			templateUrl: 'views/userslist.html',
+			controller: 'AdminController'
+		}).otherwise({
+			redirectTo: '/home'
+		});
+}]);
 
 // adminPanelApp.run(function(){
 
 // });
 
-adminPanelApp.controller('AdminController', ['$scope', function($scope){
+adminPanelApp.controller('AdminController', [function(){
 
-	$scope.removeUser = function(user){
-		var removedUser = $scope.users.indexOf(user);
-		$scope.users.splice(removedUser, 1);
+	var self = this;
+	self.removeUser = function(user){
+		var removedUser = self.users.indexOf(user);
+		self.users.splice(removedUser, 1);
 
 	};
-	$scope.addUser = function(newuser){
+	self.addUser = function(newuser){
 		console.log('działa');
-		console.log($scope.newuser.firstName);
-		$scope.users.push({
+		console.log(self.users);
+		self.users.push(
+		{
 			number: "99",
-			firstName: $scope.newuser.firstName,
-			lastName: $scope.newuser.lastName,
-			email: $scope.newuser.email,
-			login: $scope.newuser.login,
-			password: $scope.newuser.password,
-			role: $scope.newuser.role,
-			status: $scope.newuser.userStatus
+			firstName: self.newuser.firstName,
+			lastName: self.newuser.lastName,
+			email: self.newuser.email,
+			login: self.newuser.login,
+			password: self.newuser.password,
+			role: self.newuser.role,
+			userStatus: self.newuser.userStatus
+			
 		});
+		console.log(self.users);
+		// zamienić powyższe na konkretne wartości
+		// zamiast $scope.newuser.firstName dodaj jakieś imie
 
-		$scope.newuser.firstName = "";
-		$scope.newuser.lastName = "";
-		$scope.newuser.email = "";
-		$scope.newuser.login = "";
-		$scope.newuser.password = "";
-		$scope.newuser.role = "";
-		$scope.newuser.userStatus = "";
+		self.newuser.firstName = "";
+		self.newuser.lastName = "";
+		self.newuser.email = "";
+		self.newuser.login = "";
+		self.newuser.password = "";
+		self.newuser.role = "";
+		self.newuser.userStatus = "";
 	};
 
-	$scope.users = [
+	self.users = [
 		{
 			number: "1",
 			firstName: "Adam",
@@ -56,17 +68,17 @@ adminPanelApp.controller('AdminController', ['$scope', function($scope){
 			login: "Noter",
 			password: "adamantium",
 			role: "Administrator",
-			status: "Active"
+			userStatus: "Active"
 		},
 		{
 			number: "2",
-			firstName: "Jan",
+			firstName: "Tomasz",
 			lastName: "Kowalski",
 			email: "jan.kowalski@gmail.com",
 			login: "jkowalski",
 			password: "jasio",
 			role: "User",
-			status: "Active"
+			userStatus: "Active"
 		},
 		{
 			number: "3",
@@ -76,7 +88,7 @@ adminPanelApp.controller('AdminController', ['$scope', function($scope){
 			login: "mnowak",
 			password: "Marysia",
 			role: "Moderator",
-			status: "Active"
+			userStatus: "Active"
 		},
 		{
 			number: "4",
@@ -86,7 +98,9 @@ adminPanelApp.controller('AdminController', ['$scope', function($scope){
 			login: "kkura",
 			password: "karolek",
 			role: "User",
-			status: "Disabled"
+			userStatus: "Disabled"
 		}
 	];
+
+
 }]);
