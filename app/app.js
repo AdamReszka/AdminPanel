@@ -14,14 +14,15 @@ adminPanelApp.config(['$routeProvider', function($routeProvider){
 		.when('/userslist', {
 			templateUrl: 'views/userslist.html',
 			controller: 'AdminController as adcon'
-		}).otherwise({
+		})
+		.otherwise({
 			redirectTo: '/home'
 		});
 }]);
 
-// adminPanelApp.run(function(){
-
-// });
+adminPanelApp.run(['$route', function($route){
+	$route.reload();
+}]);
 
 adminPanelApp.controller('AdminController', [function(){
 

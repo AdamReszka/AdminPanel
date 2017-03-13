@@ -108,22 +108,23 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: row; }
-  .add-screen .form-cont {
-    width: 100%;
-    height: 100vh;
-    display: flex; }
-    .add-screen .form-cont .form {
-      width: 60rem;
-      height: 68rem;
-      background-color: #0B3645;
-      margin: 6rem auto;
-      border-radius: 1.5rem; }
-      .add-screen .form-cont .form h1 {
-        font-family: "Pacifico", cursive;
-        text-align: center;
-        color: #fff;
-        font-size: 5rem;
-        margin: 2rem; }
+
+.form-cont {
+  width: 100%;
+  height: 100vh;
+  display: flex; }
+  .form-cont .form {
+    width: 60rem;
+    height: 68rem;
+    background-color: #0B3645;
+    margin: 6rem auto;
+    border-radius: 1.5rem; }
+    .form-cont .form h1 {
+      font-family: "Pacifico", cursive;
+      text-align: center;
+      color: #fff;
+      font-size: 5rem;
+      margin: 2rem; }
 
 .anchor {
   text-decoration: none;
@@ -228,7 +229,8 @@ option {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
 
 .users-table {
   margin: 4rem 1rem 1rem 1rem; }
@@ -296,8 +298,9 @@ option {
 .search-wrap {
   display: flex;
   flex-direction: row;
-  margin-top: 6rem;
-  border: 0.1rem solid #a0b3b0; }
+  margin: 6rem auto;
+  border: 0.1rem solid #a0b3b0;
+  width: 55rem; }
   .search-wrap .fa-search {
     color: grey;
     width: 5rem;

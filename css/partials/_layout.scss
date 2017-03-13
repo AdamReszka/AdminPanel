@@ -68,7 +68,9 @@ body {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: row;
-	.form-cont {
+	
+}
+.form-cont {
 		width: 100%;
 		height: 100vh;
 		display: flex;
@@ -87,7 +89,6 @@ body {
 			}
 		}
 	}
-}
 .anchor {
 	text-decoration: none;
 	outline: none;
@@ -202,6 +203,7 @@ option {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		justify-content: center;
 	}
 }
 .users-table {
@@ -281,8 +283,9 @@ option {
 .search-wrap {
 	display: flex;
 	flex-direction: row;
-	margin-top: 6rem;
+	margin: 6rem auto;
 	border: 0.1rem solid #a0b3b0;
+	width: 55rem;
 	.fa-search {
 		color: grey;
 		width: 5rem;
