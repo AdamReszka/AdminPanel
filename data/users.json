@@ -1,39 +1,43 @@
-[
-{
-	"number": "1",
-	"firstName": "Adam",
-	"lastName": "Reszka",
-	"email": "adam.reszka85@gmail.com",
-	"login": "Noter",
-	"password": "adamantium",
-	"role": "Administrator",
-	"userStatus": "Active"
-}, {
-	"number": "2",
-	"firstName": "Jan",
-	"lastName": "Kowalski",
-	"email": "jan.kowalski@gmail.com",
-	"login": "jkowalski",
-	"password": "jasio",
-	"role": "User",
-	"userStatus": "Active"
-}, {
-	"number": "3",
-	"firstName": "Maria",
-	"lastName": "Nowak",
-	"email": "maria.nowak35@gmail.com",
-	"login": "mnowak",
-	"password": "Marysia",
-	"role": "Moderator",
-	"userStatus": "Active"
-}, {
-	"number": "4",
-	"firstName": "Karol",
-	"lastName": "Kura",
-	"email": "k.kura@gmail.com",
-	"login": "kkura",
-	"password": "karolek",
-	"role": "User",
-	"userStatus": "Disabled"
+{	
+	"users": [
+	{
+		"number": "1",
+		"firstName": "Adam",
+		"lastName": "Reszka",
+		"email": "adam.reszka85@gmail.com",
+		"login": "Noter",
+		"password": "adamantium",
+		"role": "Administrator",
+		"userStatus": "Active"
+	},
+	{
+		"number": "2",
+		"firstName": "Jan",
+		"lastName": "Kowalski",
+		"email": "jan.kowalski@gmail.com",
+		"login": "jkowalski",
+		"password": "jasio",
+		"role": "User",
+		"userStatus": "Active"
+	},
+	{
+		"number": "3",
+		"firstName": "Maria",
+		"lastName": "Nowak",
+		"email": "maria.nowak35@gmail.com",
+		"login": "mnowak",
+		"password": "Marysia",
+		"role": "Moderator",
+		"userStatus": "Active"
+	},
+	{
+		"number": "4",
+		"firstName": "Karol",
+		"lastName": "Kura",
+		"email": "k.kura@gmail.com",
+		"login": "kkura",
+		"password": "karolek",
+		"role": "User",
+		"userStatus": "Disabled"
+	}]
 }
-]

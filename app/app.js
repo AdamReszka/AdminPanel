@@ -28,17 +28,17 @@ adminPanelApp.run(['$route', function($route){
 	$route.reload();
 }]);
 
-adminPanelApp.controller('AdminController', [function(){
+adminPanelApp.controller('AdminController', ['$http', function($http){
 
 	var self = this;
 	self.removeUser = function(user){
 		var removedUser = self.users.indexOf(user);
 		self.users.splice(removedUser, 1);
 	};
-	
-	self.addUser = function(newuser){
-		console.log('działa');
-		console.log(self.users);
+
+	self.addUser = function(){
+		
+		// console.log(self.users);
 		self.users.push(
 		{
 			number: "99",
@@ -51,7 +51,8 @@ adminPanelApp.controller('AdminController', [function(){
 			userStatus: self.newuser.userStatus
 			
 		});
-		console.log(self.users);
+		// console.log(self.users);
+		self.$apply();
 		// zamienić powyższe na konkretne wartości
 		// zamiast $scope.newuser.firstName dodaj jakieś imie
 
@@ -106,6 +107,20 @@ adminPanelApp.controller('AdminController', [function(){
 			userStatus: "Disabled"
 		}
 	];
-
+	// $.getJSON('data/users.json', function(data){
+	// 	console.log(data);
+	// });
+	// $.ajax({
+	// 	url: 'data/users.json',
+	// 	dataType: 'json',
+	// 	type: 'get',
+	// 	cache: true,
+	// 	success: function(data) {
+	// 		$(data.users).each(function(index, value){
+	// 			self.users = value;
+	// 			console.log(self.users);
+	// 		});
+	// 	}
+	// });
 
 }]);
