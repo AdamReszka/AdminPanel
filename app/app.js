@@ -4,15 +4,15 @@ adminPanelApp.config(['$routeProvider', function($routeProvider){
 
 	$routeProvider
 		.when('/home', {
-			templateUrl: '../views/home.html',
+			templateUrl: 'views/home.html',
 			controller: 'AdminController'
 		})
 		.when('/newuser', {
-			templateUrl: '../views/newuser.html',
+			templateUrl: 'views/newuser.html',
 			controller: 'AdminController'
 		})
 		.when('/userslist', {
-			templateUrl: '../views/userslist.html',
+			templateUrl: 'views/userslist.html',
 			controller: 'AdminController'
 		}).otherwise({
 			redirectTo: '/home'
