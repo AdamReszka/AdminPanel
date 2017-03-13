@@ -7,7 +7,7 @@
 	<script src="app\libs\angular.min.js"></script>
 	<script src="app\libs\angular-route.min.js"></script>
 	<script src="js/main.js"></script>
-	
+	<script src="app\app.js"></script>
 	<link rel="stylesheet" type="text/css" href="images/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
@@ -18,12 +18,11 @@
 <body>
 	<header ng-include="'header.html'"></header>
 	<div class="hello-screen">
-
+	
 		<nav ng-include="'side.html'"></nav>
 		<div class="angular-view" ng-view>
 			
 		</div>
 	</div>
-	<script src="app\app.js"></script>
 </body>
 </html>
