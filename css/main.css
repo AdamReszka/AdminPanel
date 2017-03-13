@@ -46,10 +46,12 @@ table {
   border-spacing: 0; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  width: 100%; }
 
 body {
-  background-color: #DAE6EB; }
+  background-color: #DAE6EB;
+  width: 100%; }
 
 #head-menu {
   width: 100%;
@@ -100,56 +102,6 @@ body {
   background-color: black;
   display: flex;
   flex-direction: row; }
-  .hello-screen .hello-titles {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around; }
-    .hello-screen .hello-titles .big-title {
-      font-family: "Pacifico", cursive; }
-      .hello-screen .hello-titles .big-title .first {
-        color: #0B3645;
-        font-size: 10rem; }
-      .hello-screen .hello-titles .big-title .second {
-        text-align: center;
-        color: #2595BA;
-        font-size: 3rem;
-        padding: 1rem; }
-    .hello-screen .hello-titles .shortcuts {
-      width: 60rem;
-      height: 20rem;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      padding-bottom: 12rem; }
-      .hello-screen .hello-titles .shortcuts .s-c {
-        width: 20rem;
-        height: 20rem;
-        border-radius: 50%;
-        color: #fff;
-        background-color: #0B3645;
-        transition: 0.3s; }
-        .hello-screen .hello-titles .shortcuts .s-c:hover {
-          background-color: #2595BA; }
-        .hello-screen .hello-titles .shortcuts .s-c .fa-list {
-          font-size: 5rem;
-          margin: 4.5rem 0 2rem 0; }
-        .hello-screen .hello-titles .shortcuts .s-c .sc-button {
-          font-family: "Quicksand", sans-serif;
-          font-size: 2.2rem; }
-        .hello-screen .hello-titles .shortcuts .s-c .fa-plus {
-          font-size: 5.6rem;
-          margin: 4.2rem 0 1.7rem 0; }
-        .hello-screen .hello-titles .shortcuts .s-c .short-link {
-          display: flex;
-          width: inherit;
-          height: inherit;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          border-radius: 50%; }
 
 .add-screen {
   width: 100%;
@@ -374,6 +326,59 @@ thead {
 .angular-view {
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  width: 100%; }
+
+.hello-titles {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto; }
+  .hello-titles .big-title {
+    font-family: "Pacifico", cursive; }
+    .hello-titles .big-title .first {
+      color: #0B3645;
+      font-size: 10rem; }
+    .hello-titles .big-title .second {
+      text-align: center;
+      color: #2595BA;
+      font-size: 3rem;
+      padding: 1rem; }
+  .hello-titles .shortcuts {
+    width: 60rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 12rem; }
+    .hello-titles .shortcuts .s-c {
+      width: 20rem;
+      height: 20rem;
+      border-radius: 50%;
+      color: #fff;
+      background-color: #0B3645;
+      transition: 0.3s; }
+      .hello-titles .shortcuts .s-c:hover {
+        background-color: #2595BA; }
+      .hello-titles .shortcuts .s-c .fa-list {
+        font-size: 5rem;
+        margin: 4.5rem 0 2rem 0; }
+      .hello-titles .shortcuts .s-c .sc-button {
+        font-family: "Quicksand", sans-serif;
+        font-size: 2.2rem; }
+      .hello-titles .shortcuts .s-c .fa-plus {
+        font-size: 5.6rem;
+        margin: 4.2rem 0 1.7rem 0; }
+      .hello-titles .shortcuts .s-c .short-link {
+        display: flex;
+        width: inherit;
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 50%; }
 
 /*# sourceMappingURL=main.css.map */

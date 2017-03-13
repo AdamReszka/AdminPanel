@@ -1,8 +1,10 @@
 html {
 	font-size: 62.5%;
+	width: 100%;
 }
 body {
 	background-color: $main-bg;
+	width: 100%;
 }
 #head-menu {
 	width: 100%;
@@ -59,69 +61,7 @@ body {
 	background-color: black;
 	display: flex;
 	flex-direction: row;
-	.hello-titles {
-		width: 100%;
-		height: 100vh;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: space-around;
-		.big-title {
-				font-family: $main-f;
-			.first {
-				color: $side-c;
-				font-size: 10rem;
-
-			}
-			.second {
-				text-align: center;
-				color: $header-c;
-				font-size: 3rem;
-				padding: 1rem;
-			}
-		}
-		.shortcuts {
-			width: 60rem;
-			height: 20rem;
-			display: flex;
-			flex-direction: row;
-			justify-content: space-around;
-			padding-bottom: 12rem;
-			.s-c {
-				width: 20rem;
-				height: 20rem;
-				border-radius: 50%;
-				color: #fff;
-				background-color: $side-c;
-				transition: 0.3s;
-				&:hover {
-					background-color: $header-c;
-				}
-				.fa-list {
-					font-size: 5rem;
-					margin: 4.5rem 0 2rem 0;
-				}
-				.sc-button {
-						font-family: $menu-f;
-						font-size: 2.2rem;
-				}
-				.fa-plus {
-					font-size: 5.6rem;
-					margin: 4.2rem 0 1.7rem 0;
-
-				}
-				.short-link {
-					display: flex;
-					width: inherit;
-					height: inherit;
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					border-radius: 50%;
-				}
-			}
-		}
-	}
+	
 }
 .add-screen {
 	width: 100%;
@@ -377,4 +317,72 @@ thead {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	width: 100%;
 }
+
+
+.hello-titles {
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		margin: 0 auto;
+		.big-title {
+				font-family: $main-f;
+
+			.first {
+				color: $side-c;
+				font-size: 10rem;
+
+			}
+			.second {
+				text-align: center;
+				color: $header-c;
+				font-size: 3rem;
+				padding: 1rem;
+			}
+		}
+		.shortcuts {
+			width: 60rem;
+			height: 20rem;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			padding-bottom: 12rem;
+			.s-c {
+				width: 20rem;
+				height: 20rem;
+				border-radius: 50%;
+				color: #fff;
+				background-color: $side-c;
+				transition: 0.3s;
+				&:hover {
+					background-color: $header-c;
+				}
+				.fa-list {
+					font-size: 5rem;
+					margin: 4.5rem 0 2rem 0;
+				}
+				.sc-button {
+						font-family: $menu-f;
+						font-size: 2.2rem;
+				}
+				.fa-plus {
+					font-size: 5.6rem;
+					margin: 4.2rem 0 1.7rem 0;
+
+				}
+				.short-link {
+					display: flex;
+					width: inherit;
+					height: inherit;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					border-radius: 50%;
+				}
+			}
+		}
+	}
