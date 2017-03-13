@@ -20,6 +20,10 @@ adminPanelApp.config(['$routeProvider', function($routeProvider){
 		});
 }]);
 
+adminPanelApp.config(['$locationProvider', function($locationProvider) {
+  $locationProvider.hashPrefix('');
+}]);
+
 adminPanelApp.run(['$route', function($route){
 	$route.reload();
 }]);
@@ -30,8 +34,8 @@ adminPanelApp.controller('AdminController', [function(){
 	self.removeUser = function(user){
 		var removedUser = self.users.indexOf(user);
 		self.users.splice(removedUser, 1);
-
 	};
+	
 	self.addUser = function(newuser){
 		console.log('działa');
 		console.log(self.users);
