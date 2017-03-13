@@ -1,6 +1,6 @@
 var adminPanelApp = angular.module('adminPanelApp', ['ngRoute']);
 
-adminPanelApp.config(['$routeProvider', function($routeProvider){
+adminPanelApp.config(['$routeProvider','$locationProvider' function($routeProvider, $locationProvider){
 
 	$routeProvider
 		.when('/home', {
